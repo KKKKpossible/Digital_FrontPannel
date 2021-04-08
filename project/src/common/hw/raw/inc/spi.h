@@ -9,10 +9,19 @@
 #define SRC_COMMON_HW_RAW_INC_SPI_H_
 
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
 #include "hw.h"
 
 
 bool SpiInit(void); // not clear
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* SRC_COMMON_HW_RAW_INC_SPI_H_ */

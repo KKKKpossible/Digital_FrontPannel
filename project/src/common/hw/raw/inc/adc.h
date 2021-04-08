@@ -12,7 +12,17 @@
 #include "hw.h"
 
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
 bool AdcInit(void); // not clear
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* SRC_COMMON_HW_INC_ADC_H_ */

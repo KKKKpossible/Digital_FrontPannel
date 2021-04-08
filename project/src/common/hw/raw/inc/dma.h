@@ -12,12 +12,22 @@
 #include "hw.h"
 
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
 #ifdef HW_DMA_USE
 
 
 bool DmaInit(void); // not clear
 
 
+#endif
+
+
+#ifdef __cplusplus
+}
 #endif
 
 

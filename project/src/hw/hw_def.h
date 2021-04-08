@@ -8,6 +8,10 @@
 #ifndef SRC_HW_HW_DEF_H_
 #define SRC_HW_HW_DEF_H_
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 
 #include "bsp.h"
 #include "def.h"
@@ -16,7 +20,7 @@
 #define HW_LED_USE
 #define 	HW_LED_CHANNEL_MAX    (1U)
 #define HW_OLED_USE
-#define     HW_LCD_CHANNEL_MAX    (1U)
+#define     HW_OLED_CHANNEL_MAX   (1U)
 #define HW_SENSOR_USE
 #define		HW_SENSOR_CHANNEL_MAX (3U)
 #define HW_SWITCH_USE
@@ -39,6 +43,11 @@
 #define		HW_SPI_CHANEEL_MAX    (1U)
 #define HW_USART_USE
 #define 	HW_USART_CHANNEL_MAX  (1U)
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* SRC_HW_HW_DEF_H_ */

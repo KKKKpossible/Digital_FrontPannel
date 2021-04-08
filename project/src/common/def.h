@@ -9,12 +9,24 @@
 #define SRC_COMMON_DEF_H_
 
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
 #include "stdio.h"
 #include "stdbool.h"
 #include "stdint.h"
+#include "string.h"
 
 
-#define DEF_LED_CHANNEL_0 (0U)
+#define DEF_LED_CHANNEL_0  (0U)
+#define DEF_OLED_CHANNEL_0 (0U)
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* SRC_COMMON_DEF_H_ */

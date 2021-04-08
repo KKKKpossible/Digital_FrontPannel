@@ -9,10 +9,19 @@
 #define SRC_COMMON_HW_INC_UART_H_
 
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
 #include "hw.h"
 
 
 bool UsartInit(void); // not clear
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* SRC_COMMON_HW_INC_UART_H_ */

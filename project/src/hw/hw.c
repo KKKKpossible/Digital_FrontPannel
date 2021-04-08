@@ -14,21 +14,23 @@ bool HwInit(void)
 {
 	bool ret = true;
 
-    BspInit();
+    BspInit    ();
 
-	GpioInit();
-	DmaInit();
-	I2cInit();
-	SpiInit();
-	UsartInit();
-	AdcInit();
+	GpioInit   ();
+	DmaInit    ();
+	I2cInit    ();
+	SpiInit    ();
+	UsartInit  ();
+	AdcInit    ();
 
-    LedInit(DEF_LED_CHANNEL_0);
-    OledInit();
-    SensorInit();
-    SwitchInit();
-    UsbInit();
-    VvaInit();
+    LedInit    (DEF_LED_CHANNEL_0);
+    OledInit   (DEF_OLED_CHANNEL_0);
+    SensorInit ();
+    SwitchInit ();
+    UsbInit    ();
+    VvaInit    ();
 
     return ret;
 }
+
+
