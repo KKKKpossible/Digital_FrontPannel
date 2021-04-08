@@ -28,7 +28,7 @@
 
 // raw define
 #define HW_ADC_USE
-#define 	HW_ADC_CHANNEL_MAX   (4U)
+#define 	HW_ADC_CHANNEL_MAX   (6U)
 #define HW_DMA_USE
 #define 	HW_DMA_CHANNEL_MAX   (1U)
 #define HW_GPIO_USE

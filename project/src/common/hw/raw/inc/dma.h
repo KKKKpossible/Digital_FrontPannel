@@ -12,7 +12,13 @@
 #include "hw.h"
 
 
+#ifdef HW_DMA_USE
+
+
 bool DmaInit(void); // not clear
+
+
+#endif
 
 
 #endif /* SRC_COMMON_HW_RAW_INC_DMA_H_ */

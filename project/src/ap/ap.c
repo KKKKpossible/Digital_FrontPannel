@@ -22,7 +22,6 @@ bool ApMain(void)
 
 	while(true)
 	{
-
 	}
 
 	return ret;
