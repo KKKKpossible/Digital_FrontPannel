@@ -6,6 +6,8 @@
 #include "Adafruit_GFX.h"
 #include "Adafruit_SSD1306.h"
 
+#include "hw.h"
+
 #define SSD1306_CMD   0x00
 #define SSD1306_DATA  0x40
 
@@ -170,23 +172,26 @@ void Adafruit_SSD1306::invertDisplay(uint8_t i) {
 }
 
 void Adafruit_SSD1306::ssd1306_command(uint8_t c) {
-  
-  Buffer_CMD[1] = c;
 
-//  while(I2C_MASTER_Transmit(&I2C_MASTER_0, true, _i2caddr, &Buffer_CMD[0], 1, false) != I2C_MASTER_STATUS_SUCCESS);
-//  while(I2C_MASTER_Transmit(&I2C_MASTER_0, false, _i2caddr, &Buffer_CMD[1], 1, true) != I2C_MASTER_STATUS_SUCCESS);
-//  while(I2C_MASTER_IsTxBusy(&I2C_MASTER_0) == true);
+    while(HAL_I2C_Master_Transmit(&hi2c1,_i2caddr,Buffer_CMD,0x02,0x10) != HAL_OK)
+    {
+
+    }
 }
 
 void Adafruit_SSD1306::ssd1306_data(uint16_t a)  {
 
-  uint8_t i;
+    uint8_t i;
 
-  
-  for(i = 0; i < 128 ; i++) {
-    Buffer_DATA[i+1] = buffer[a+i];
-  }
-//  while(I2C_MASTER_Transmit(&I2C_MASTER_0, true, _i2caddr, Buffer_DATA, 129, true) != I2C_MASTER_STATUS_SUCCESS);
+
+    for(i = 0; i < 128 ; i++) {
+      Buffer_DATA[i+1] = buffer[a+i];
+    }
+
+    while(HAL_I2C_Master_Transmit(&hi2c1,_i2caddr,Buffer_DATA,129,0x10) != HAL_OK)
+    {
+
+    }
 }
 
 

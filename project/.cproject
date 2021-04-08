@@ -215,7 +215,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="src/lib/Core" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="about_adc_main.cpp|src/lib/Core" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -385,7 +385,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="src/lib/Core" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="about_adc_main.cpp|src/lib/Core" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
