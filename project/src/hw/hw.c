@@ -23,7 +23,7 @@ bool HwInit(void)
 	UsartInit();
 	AdcInit();
 
-    LedInit();
+    LedInit(DEF_LED_CHANNEL_0);
     OledInit();
     SensorInit();
     SwitchInit();

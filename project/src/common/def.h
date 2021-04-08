@@ -14,4 +14,7 @@
 #include "stdint.h"
 
 
+#define DEF_LED_CHANNEL_0 (0U)
+
+
 #endif /* SRC_COMMON_DEF_H_ */
