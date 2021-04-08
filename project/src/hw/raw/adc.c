@@ -14,5 +14,7 @@ ADC_HandleTypeDef hadc1;
 
 bool AdcInit(void)
 {
+	bool ret = true;
 
+	return ret;
 }

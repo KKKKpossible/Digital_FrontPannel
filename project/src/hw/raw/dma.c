@@ -14,5 +14,7 @@ DMA_HandleTypeDef hdma_adc1;
 
 bool DmaInit(void)
 {
+	bool ret = true;
 
+	return ret;
 }

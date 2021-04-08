@@ -11,8 +11,8 @@
 
 #include "hw_def.h"
 
-#include "lcd.h"
 #include "led.h"
+#include "oled.h"
 #include "sensor.h"
 #include "switch.h"
 #include "usb.h"

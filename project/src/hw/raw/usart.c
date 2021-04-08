@@ -14,5 +14,7 @@ UART_HandleTypeDef huart1;
 
 bool UsartInit(void)
 {
+	bool ret = true;
 
+	return ret;
 }

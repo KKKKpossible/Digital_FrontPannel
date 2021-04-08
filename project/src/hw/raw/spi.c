@@ -14,5 +14,7 @@ SPI_HandleTypeDef hspi1;
 
 bool SpiInit(void)
 {
+	bool ret = true;
 
+	return ret;
 }

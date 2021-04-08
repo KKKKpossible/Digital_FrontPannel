@@ -11,15 +11,21 @@
 
 bool VvaInit  (void)
 {
+	bool ret = true;
 
+	return ret;
 }
 
 bool ReadVva  (void)
 {
+	bool ret = true;
 
+	return ret;
 }
 
 bool WriteVva (void)
 {
+	bool ret = true;
 
+	return ret;
 }

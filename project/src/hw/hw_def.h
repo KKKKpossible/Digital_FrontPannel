@@ -12,5 +12,7 @@
 #include "bsp.h"
 #include "def.h"
 
+#define HW_LCD_USE
+#define HW_LCD_CHANNEL_MAX 1
 
 #endif /* SRC_HW_HW_DEF_H_ */

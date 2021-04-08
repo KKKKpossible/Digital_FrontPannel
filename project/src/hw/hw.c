@@ -16,17 +16,18 @@ bool HwInit(void)
 
     BspInit();
 
-    AdcInit();
-    DmaInit();
-    GpioInit();
-    I2cInit();
-    SpiInit();
-    UsartInit();
+	GpioInit();
+	DmaInit();
+	I2cInit();
+	SpiInit();
+	UsartInit();
+	AdcInit();
 
-    LcdInit();
     LedInit();
+    OledInit();
     SensorInit();
     SwitchInit();
+    UsbInit();
     VvaInit();
 
     return ret;

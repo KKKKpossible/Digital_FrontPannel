@@ -11,15 +11,21 @@
 
 bool SwitchInit(void)
 {
+	bool ret = true;
 
+	return ret;
 }
 
 bool ReadSwitch(void)
 {
+	bool ret = true;
 
+	return ret;
 }
 
 bool WriteSwitch(void)
 {
+	bool ret = true;
 
+	return ret;
 }

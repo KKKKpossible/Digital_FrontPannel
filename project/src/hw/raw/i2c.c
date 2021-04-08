@@ -14,5 +14,7 @@ I2C_HandleTypeDef hi2c1;
 
 bool I2cInit(void)
 {
+	bool ret = true;
 
+	return ret;
 }
