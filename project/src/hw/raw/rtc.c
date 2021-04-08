@@ -16,10 +16,31 @@ bool RtcInit(void)
 {
 	bool ret = true;
 
+	RTC_TimeTypeDef sTime = {0};
+	RTC_DateTypeDef DateToUpdate = {0};
+
 	hrtc.Instance = RTC;
 	hrtc.Init.AsynchPrediv = RTC_AUTO_1_SECOND;
 	hrtc.Init.OutPut = RTC_OUTPUTSOURCE_ALARM;
 	if (HAL_RTC_Init(&hrtc) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	sTime.Hours = 0x0;
+	sTime.Minutes = 0x0;
+	sTime.Seconds = 0x0;
+
+	if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	DateToUpdate.WeekDay = RTC_WEEKDAY_THURSDAY;
+	DateToUpdate.Month = RTC_MONTH_APRIL;
+	DateToUpdate.Date = 0x8;
+	DateToUpdate.Year = 0x21;
+
+	if (HAL_RTC_SetDate(&hrtc, &DateToUpdate, RTC_FORMAT_BCD) != HAL_OK)
 	{
 		Error_Handler();
 	}
