@@ -21,9 +21,9 @@ extern "C"{
 #define DEF_SENSOR_CHANNEL_MAX HW_SENSOR_CHANNEL_MAX
 
 
-bool SensorInit  (void); // not clear
-bool ReadSensor  (void); // not clear
-bool WriteSensor (void); // not clear
+bool     SensorInit  (uint8_t ch); // not clear
+uint16_t ReadSensor  (uint8_t ch); // not clear
+bool     WriteSensor (void); // not clear
 
 
 #endif

@@ -19,10 +19,16 @@ extern "C"{
 #include "stdint.h"
 #include "string.h"
 #include "math.h"
+#include "stdlib.h"
 
 
 #define DEF_LED_CHANNEL_0  (0U)
+
 #define DEF_OLED_CHANNEL_0 (0U)
+
+#define DEF_SENSOR_CHANNEL_0 (0U)
+#define DEF_SENSOR_CHANNEL_1 (1U)
+#define DEF_SENSOR_CHANNEL_2 (2U)
 
 
 #ifdef __cplusplus

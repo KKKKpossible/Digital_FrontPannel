@@ -25,7 +25,9 @@ bool HwInit(void)
 
     LedInit    (DEF_LED_CHANNEL_0);
     OledInit   (DEF_OLED_CHANNEL_0);
-    SensorInit ();
+    SensorInit (DEF_SENSOR_CHANNEL_0);
+    SensorInit (DEF_SENSOR_CHANNEL_1);
+    SensorInit (DEF_SENSOR_CHANNEL_2);
     SwitchInit ();
     UsbInit    ();
     VvaInit    ();

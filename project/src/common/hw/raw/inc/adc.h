@@ -9,12 +9,14 @@
 #define SRC_COMMON_HW_INC_ADC_H_
 
 
-#include "hw.h"
 
 
 #ifdef __cplusplus
 extern "C"{
 #endif
+
+
+#include "hw.h"
 
 
 bool AdcInit(void); // not clear

@@ -29,7 +29,7 @@ public:
 
     Oledpp();
     bool OledppInit();
-    bool OledppPrint(const char* format);
+    bool OledppPrint(char* format);
 
 
 #endif

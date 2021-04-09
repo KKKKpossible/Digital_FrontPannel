@@ -33,9 +33,11 @@ bool Oledpp::OledppInit()
     return ret;
 }
 
-bool Oledpp::OledppPrint(const char* format)
+bool Oledpp::OledppPrint(char* format)
 {
     bool ret = true;
+
+    // oledpp.display.write(format);
 
     return ret;
 }
