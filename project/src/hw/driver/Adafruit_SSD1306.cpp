@@ -14,6 +14,7 @@
 
 #define pgm_read_byte(addr) (*(const unsigned char *)(addr))
 
+extern I2C_HandleTypeDef hi2c1;
 
 uint8_t Buffer_CMD[]  = {SSD1306_CMD, 0x00};
 uint8_t Buffer_DATA[129]= {SSD1306_DATA,};

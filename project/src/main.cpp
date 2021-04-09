@@ -9,12 +9,18 @@
 #include "main.h"
 
 
+extern ApPp appp;
+extern Hwpp hwpp;
+
+
 int main()
 {
     HwInit();
-    ApInit();
 
-    ApMain();
+    hwpp.HwInit();
+
+    appp.ApPpInit();
+    appp.ApPpMain();
 
     return 0;
 }

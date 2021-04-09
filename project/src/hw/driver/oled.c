@@ -38,7 +38,6 @@ bool OledInit(uint8_t ch)
 	    default:
 	        break;
 	}
-
 	return ret;
 }
 
